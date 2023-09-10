@@ -1,0 +1,7 @@
+D:\Main\Git\STP\3_lab\STP_ThirdLab\bin\Debug\STP_ThirdLab.exe.config
+D:\Main\Git\STP\3_lab\STP_ThirdLab\bin\Debug\STP_ThirdLab.exe
+D:\Main\Git\STP\3_lab\STP_ThirdLab\bin\Debug\STP_ThirdLab.pdb
+D:\Main\Git\STP\3_lab\STP_ThirdLab\obj\Debug\STP_ThirdLab.csproj.AssemblyReference.cache
+D:\Main\Git\STP\3_lab\STP_ThirdLab\obj\Debug\STP_ThirdLab.csproj.CoreCompileInputs.cache
+D:\Main\Git\STP\3_lab\STP_ThirdLab\obj\Debug\STP_ThirdLab.exe
+D:\Main\Git\STP\3_lab\STP_ThirdLab\obj\Debug\STP_ThirdLab.pdb
