@@ -1,0 +1,7 @@
+C:\Users\aves7\source\repos\STP_FirstLab\bin\Debug\STP_FirstLab.exe.config
+C:\Users\aves7\source\repos\STP_FirstLab\bin\Debug\STP_FirstLab.exe
+C:\Users\aves7\source\repos\STP_FirstLab\bin\Debug\STP_FirstLab.pdb
+C:\Users\aves7\source\repos\STP_FirstLab\obj\Debug\STP_FirstLab.csproj.AssemblyReference.cache
+C:\Users\aves7\source\repos\STP_FirstLab\obj\Debug\STP_FirstLab.csproj.CoreCompileInputs.cache
+C:\Users\aves7\source\repos\STP_FirstLab\obj\Debug\STP_FirstLab.exe
+C:\Users\aves7\source\repos\STP_FirstLab\obj\Debug\STP_FirstLab.pdb
