@@ -40,4 +40,32 @@ namespace unit_tests
             Assert.AreEqual(-2.0, result, 0.001); // Проверка, что функция работает с отрицательными числами
         }
     }
+
+    [TestClass]
+    public class MaxMatrixElTests
+    {
+        [TestMethod]
+        public void MaxMatrixEl_ValidMatrix()
+        {
+            double[,] matrix = { { 1.0, 2.0, 3.0 }, { 4.0, 5.0, 6.0 }, { 7.0, 8.0, 9.0 } };
+            double result = Program.MaxMatrixEl(matrix);
+            Assert.AreEqual(9.0, result, 0.001); // Проверка нахождения максимального значения
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void FindMaxElement_EmptyArray()
+        {
+            double[,] matrix = new double[0, 0];
+            double result = Program.MaxMatrixEl(matrix);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void MaxMatrixEl_NullMatrix()
+        {
+            double[,] matrix = null; ;
+            double result = Program.MaxMatrixEl(matrix);
+        }
+    }
 }
