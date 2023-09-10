@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace STP_ThirdLab
 {
@@ -10,7 +7,7 @@ namespace STP_ThirdLab
     {
         public static void Main(string[] args)
         {
-            double[] h = new double[3];
+            /*double[] h = new double[3];
             h = Order(7, 3, 5);
             for (int i = 0; i < 3; i++)
             {
@@ -51,12 +48,12 @@ namespace STP_ThirdLab
                 Console.WriteLine(" ");
             }
 
-            MaxMatrixTopDiameterEl(matrix);
+            MaxMatrixTopDiameterEl(matrix);*/
         }
 
         public static double[] Order(double x, double y, double z)
         {
-           double[] order = new double[3];
+            double[] order = new double[3];
             if (x < y)
             {
                 (x, y) = (y, x);
