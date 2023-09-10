@@ -1,0 +1,65 @@
+# Папки и файлы, которые необходимо игнорировать
+
+# Игнорировать файлы сборки Visual Studio
+bin/
+obj/
+
+# Игнорировать файлы решения Visual Studio
+*.suo
+*.user
+*.sln.docstates
+
+# Игнорировать папки и файлы, созданные Visual Studio Code
+.vscode/
+.idea/
+
+# Игнорировать временные файлы и папки
+[Tt]humbs.db
+*.DS_Store
+[Tt]emp/
+[Tt]est[Rr]esults/
+[Bb]in/
+[Oo]bj/
+
+# Игнорировать файлы NuGet
+packages/
+
+# Игнорировать файлы отладки
+*.pdb
+
+# Игнорировать файлы логирования
+*.log
+
+# Игнорировать файлы пользователя
+*.user
+
+# Игнорировать файлы резервных копий
+*~
+*.bak
+
+# Игнорировать файлы проекта Rider
+.idea/
+*.sln.iml
+
+# Игнорировать папку Cache в ReSharper
+_ReSharper*/
+
+# Игнорировать файлы Visual Studio
+.vscode/
+.vs2019/
+.vs/
+
+# Игнорировать файлы Rider
+.idea/
+
+# Игнорировать файлы Rider/ReSharper
+.idea/
+.idea.inspectCode/
+
+# Игнорировать файлы CodeRush
+_CodeRush/
+
+# Игнорировать файлы Rider/ReSharper/CodeRush
+.idea/
+.idea.inspectCode/
+_CodeRush/
