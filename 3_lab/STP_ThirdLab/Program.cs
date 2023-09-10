@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace STP_ThirdLab
 {
@@ -35,7 +34,7 @@ namespace STP_ThirdLab
 
             Console.WriteLine(GCD(-13, -576));
 
-            Console.WriteLine(ConvertFromEven(436654));
+            Console.WriteLine(ConvertFromEven(-12345678));
 
             double[,] matrix = new double[5, 5];
             for (int i = 0; i < 5; i++)
@@ -89,29 +88,26 @@ namespace STP_ThirdLab
 
         public static int ConvertFromEven(int x)
         {
-            List<int> numbers = new List<int> { };
+            x = Math.Abs(x);
+            int result = 0;
+            int grade = 1;
+            bool evenDigit = false;
+
             while (x > 0)
             {
-                numbers.Add((x % 10));
+                int digit = x % 10;
+                if (evenDigit)
+                {
+                    result += digit * grade;
+                    grade *= 10;
+                }
+                evenDigit = !evenDigit;
                 x = x / 10;
             }
 
-
-
-            int res = 0;
-            int grade = 1;
-            for (int i = numbers.Count - 1; i >= 0; i--)
-            {
-                if (numbers[i] % 2 == 0)
-                {
-                    res += numbers[i] * grade;
-                    grade *= 10;
-                }
-            }
-
-            Console.WriteLine(res);
-            return res;
+            return result;
         }
+
 
         public static double MaxMatrixTopDiameterEl(double[,] matrix)
         {

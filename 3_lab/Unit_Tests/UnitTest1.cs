@@ -58,57 +58,89 @@ namespace Unit_Tests
         [TestMethod]
         public void GCD_PositiveNumbers()
         {
-            // Arrange
             int a = 48;
             int b = 18;
 
-            // Act
             int result = Program.GCD(a, b);
 
-            // Assert
             Assert.AreEqual(6, result);
         }
 
         [TestMethod]
         public void GCD_NegativeNumbers()
         {
-            // Arrange
             int a = -36;
             int b = -48;
 
-            // Act
             int result = Program.GCD(a, b);
 
-            // Assert
             Assert.AreEqual(12, result);
         }
 
         [TestMethod]
         public void GCD_OneZeroInput()
         {
-            // Arrange
             int a = 0;
             int b = 42;
 
-            // Act
             int result = Program.GCD(a, b);
 
-            // Assert
             Assert.AreEqual(42, result);
         }
 
         [TestMethod]
         public void GCD_BothZeroInput()
         {
-            // Arrange
             int a = 0;
             int b = 0;
 
-            // Act
             int result = Program.GCD(a, b);
 
-            // Assert
             Assert.AreEqual(0, result);
+        }
+    }
+
+    [TestClass]
+    public class ConvertFromEvenTests
+    {
+        [TestMethod]
+        public void ConvertFromEven_PositiveNumber()
+        {
+            int x = 12345;
+
+            int result = Program.ConvertFromEven(x);
+
+            Assert.AreEqual(24, result);
+        }
+
+        [TestMethod]
+        public void ConvertFromEven_Zero()
+        {
+            int x = 0;
+
+            int result = Program.ConvertFromEven(x);
+
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        public void ConvertFromEven_NegativeNumber()
+        {
+            int x = -13579;
+
+            int result = Program.ConvertFromEven(x);
+
+            Assert.AreEqual(37, result);
+        }
+
+        [TestMethod]
+        public void ConvertFromEven_MixedNumber()
+        {
+            int x = 1234567890;
+
+            int result = Program.ConvertFromEven(x);
+
+            Assert.AreEqual(13579, result);
         }
     }
 }
