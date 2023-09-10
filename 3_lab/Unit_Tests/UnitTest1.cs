@@ -143,4 +143,61 @@ namespace Unit_Tests
             Assert.AreEqual(13579, result);
         }
     }
+
+    [TestClass]
+    public class MaxMatrixTopDiameterElTests
+    {
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void MaxMatrixTopDiameterEl_EmptyArray()
+        {
+            double[,] matrix = new double[0, 0];
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void MaxMatrixTopDiameterEl_NullMatrix()
+        {
+            double[,] matrix = null; ;
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
+        }
+
+        [TestMethod]
+        public void MaxMatrixTopDiameterEl_ValidMatrix()
+        {
+            double[,] matrix = {
+            { 1.0, 2.0, 3.0 },
+            { 4.0, 5.0, 6.0 },
+            { 7.0, 8.0, 9.0 }
+            };
+
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
+            Assert.AreEqual(3.0, result, 0.001);
+        }
+        [TestMethod]
+        public void MaxMatrixTopDiameterEl_NegativeValidMatrix()
+        {
+            double[,] matrix = {
+            { -1.0, -2.0, -3.0 },
+            { -4.0, -5.0, -6.0 },
+            { -7.0, -8.0, -9.0 }
+            };
+
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
+            Assert.AreEqual(-3.0, result, 0.001);
+        }
+
+        public void MaxMatrixTopDiameterEl_OnesMatrix()
+        {
+            double[,] matrix = {
+            { 1, 1, 1 },
+            { 1, 1, 1 },
+            { 1, 1, 1 }
+            };
+
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
+            Assert.AreEqual(3.0, result, 0.001);
+        }
+    }
 }
