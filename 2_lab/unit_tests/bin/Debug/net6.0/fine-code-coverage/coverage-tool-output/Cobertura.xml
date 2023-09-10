@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.670886075949367" branch-rate="0.545454545454545" lines-covered="53" lines-valid="79" branches-covered="12" branches-valid="22" complexity="32" version="0" timestamp="1694364301">
+<coverage line-rate="0.947368421052632" branch-rate="1" lines-covered="90" lines-valid="95" branches-covered="22" branches-valid="22" complexity="36" version="0" timestamp="1694364894">
   <sources>
     <source>D:\Studying\STP\2_lab\</source>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="STP_SecondLab" line-rate="0.488888888888889" branch-rate="0.545454545454545" complexity="23">
+    <package name="STP_SecondLab" line-rate="1" branch-rate="1" complexity="23">
       <classes>
-        <class name="STP_SecondLab.Program" filename="D:\Studying\STP\2_lab\STP_SecondLab\Program.cs" line-rate="0.488888888888889" branch-rate="0.545454545454545" complexity="23">
+        <class name="STP_SecondLab.Program" filename="D:\Studying\STP\2_lab\STP_SecondLab\Program.cs" line-rate="1" branch-rate="1" complexity="23">
           <methods>
-            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="Main" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="0" branch="false" />
-                <line number="21" hits="0" branch="false" />
+                <line number="8" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
               </lines>
             </method>
             <method name="MinFromTwo" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
@@ -46,35 +46,35 @@
                 <line number="52" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="MaxMatrixTopDiameterEl" signature="(...)" line-rate="0" branch-rate="0" complexity="10">
+            <method name="MaxMatrixTopDiameterEl" signature="(...)" line-rate="1" branch-rate="1" complexity="10">
               <lines>
-                <line number="55" hits="0" branch="false" />
-                <line number="56" hits="0" branch="true" condition-coverage="0% (0/4)" />
-                <line number="57" hits="0" branch="false" />
-                <line number="58" hits="0" branch="false" />
-                <line number="61" hits="0" branch="false" />
-                <line number="62" hits="0" branch="false" />
-                <line number="63" hits="0" branch="false" />
-                <line number="64" hits="0" branch="false" />
-                <line number="66" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="67" hits="0" branch="false" />
-                <line number="69" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="70" hits="0" branch="false" />
-                <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="73" hits="0" branch="false" />
-                <line number="74" hits="0" branch="false" />
-                <line number="75" hits="0" branch="false" />
-                <line number="76" hits="0" branch="false" />
-                <line number="78" hits="0" branch="false" />
-                <line number="79" hits="0" branch="false" />
-                <line number="81" hits="0" branch="false" />
-                <line number="83" hits="0" branch="false" />
+                <line number="55" hits="3" branch="false" />
+                <line number="56" hits="3" branch="true" condition-coverage="100% (4/4)" />
+                <line number="57" hits="2" branch="false" />
+                <line number="58" hits="2" branch="false" />
+                <line number="61" hits="1" branch="false" />
+                <line number="62" hits="1" branch="false" />
+                <line number="63" hits="1" branch="false" />
+                <line number="64" hits="1" branch="false" />
+                <line number="66" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="67" hits="3" branch="false" />
+                <line number="69" hits="18" branch="true" condition-coverage="100% (2/2)" />
+                <line number="70" hits="6" branch="false" />
+                <line number="72" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="73" hits="6" branch="false" />
+                <line number="74" hits="6" branch="false" />
+                <line number="75" hits="6" branch="false" />
+                <line number="76" hits="6" branch="false" />
+                <line number="78" hits="3" branch="false" />
+                <line number="79" hits="3" branch="false" />
+                <line number="81" hits="1" branch="false" />
+                <line number="83" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="0" branch="false" />
-            <line number="21" hits="0" branch="false" />
+            <line number="8" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
             <line number="24" hits="5" branch="false" />
             <line number="25" hits="5" branch="true" condition-coverage="100% (2/2)" />
             <line number="26" hits="5" branch="false" />
@@ -97,32 +97,32 @@
             <line number="48" hits="3" branch="false" />
             <line number="50" hits="1" branch="false" />
             <line number="52" hits="1" branch="false" />
-            <line number="55" hits="0" branch="false" />
-            <line number="56" hits="0" branch="true" condition-coverage="0% (0/4)" />
-            <line number="57" hits="0" branch="false" />
-            <line number="58" hits="0" branch="false" />
-            <line number="61" hits="0" branch="false" />
-            <line number="62" hits="0" branch="false" />
-            <line number="63" hits="0" branch="false" />
-            <line number="64" hits="0" branch="false" />
-            <line number="66" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="67" hits="0" branch="false" />
-            <line number="69" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="70" hits="0" branch="false" />
-            <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="73" hits="0" branch="false" />
-            <line number="74" hits="0" branch="false" />
-            <line number="75" hits="0" branch="false" />
-            <line number="76" hits="0" branch="false" />
-            <line number="78" hits="0" branch="false" />
-            <line number="79" hits="0" branch="false" />
-            <line number="81" hits="0" branch="false" />
-            <line number="83" hits="0" branch="false" />
+            <line number="55" hits="3" branch="false" />
+            <line number="56" hits="3" branch="true" condition-coverage="100% (4/4)" />
+            <line number="57" hits="2" branch="false" />
+            <line number="58" hits="2" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="63" hits="1" branch="false" />
+            <line number="64" hits="1" branch="false" />
+            <line number="66" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="67" hits="3" branch="false" />
+            <line number="69" hits="18" branch="true" condition-coverage="100% (2/2)" />
+            <line number="70" hits="6" branch="false" />
+            <line number="72" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="73" hits="6" branch="false" />
+            <line number="74" hits="6" branch="false" />
+            <line number="75" hits="6" branch="false" />
+            <line number="76" hits="6" branch="false" />
+            <line number="78" hits="3" branch="false" />
+            <line number="79" hits="3" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="83" hits="1" branch="false" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="unit_tests" line-rate="0.911764705882353" branch-rate="1" complexity="9">
+    <package name="unit_tests" line-rate="0.9" branch-rate="1" complexity="13">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\petro\.nuget\packages\microsoft.net.test.sdk\17.5.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -136,90 +136,13 @@
             <line number="4" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="unit_tests.MaxMatrixElTests" filename="D:\Studying\STP\2_lab\unit_tests\UnitTest1.cs" line-rate="0.846153846153846" branch-rate="1" complexity="3">
+        <class name="unit_tests.MainTest" filename="D:\Studying\STP\2_lab\unit_tests\UnitTest1.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name="MaxMatrixEl_ValidMatrix" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="49" hits="1" branch="false" />
-                <line number="50" hits="1" branch="false" />
-                <line number="51" hits="1" branch="false" />
-                <line number="52" hits="1" branch="false" />
-                <line number="53" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="FindMaxElement_EmptyArray" signature="()" line-rate="0.75" branch-rate="1" complexity="1">
-              <lines>
-                <line number="58" hits="1" branch="false" />
-                <line number="59" hits="1" branch="false" />
-                <line number="60" hits="1" branch="false" />
-                <line number="61" hits="0" branch="false" />
-              </lines>
-            </method>
-            <method name="MaxMatrixEl_NullMatrix" signature="()" line-rate="0.75" branch-rate="1" complexity="1">
-              <lines>
-                <line number="66" hits="1" branch="false" />
-                <line number="67" hits="2" branch="false" />
-                <line number="68" hits="1" branch="false" />
-                <line number="69" hits="0" branch="false" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="49" hits="1" branch="false" />
-            <line number="50" hits="1" branch="false" />
-            <line number="51" hits="1" branch="false" />
-            <line number="52" hits="1" branch="false" />
-            <line number="53" hits="1" branch="false" />
-            <line number="58" hits="1" branch="false" />
-            <line number="59" hits="1" branch="false" />
-            <line number="60" hits="1" branch="false" />
-            <line number="61" hits="0" branch="false" />
-            <line number="66" hits="1" branch="false" />
-            <line number="67" hits="2" branch="false" />
-            <line number="68" hits="1" branch="false" />
-            <line number="69" hits="0" branch="false" />
-          </lines>
-        </class>
-        <class name="unit_tests.MinFromTwoTests" filename="D:\Studying\STP\2_lab\unit_tests\UnitTest1.cs" line-rate="1" branch-rate="1" complexity="5">
-          <methods>
-            <method name="MinFromTwo_FirstIsSmaller" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Main_Test" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="10" hits="1" branch="false" />
                 <line number="11" hits="1" branch="false" />
                 <line number="12" hits="1" branch="false" />
-                <line number="13" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="MinFromTwo_SecondIsSmaller" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="17" hits="1" branch="false" />
-                <line number="18" hits="1" branch="false" />
-                <line number="19" hits="1" branch="false" />
-                <line number="20" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="MinFromTwo_BothAreEqual" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="24" hits="1" branch="false" />
-                <line number="25" hits="1" branch="false" />
-                <line number="26" hits="1" branch="false" />
-                <line number="27" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="MinFromTwo_BothAreNegative" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="31" hits="1" branch="false" />
-                <line number="32" hits="1" branch="false" />
-                <line number="33" hits="1" branch="false" />
-                <line number="34" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="MinFromTwo_OneIsNegative" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="38" hits="1" branch="false" />
-                <line number="39" hits="1" branch="false" />
-                <line number="40" hits="1" branch="false" />
-                <line number="41" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
@@ -227,23 +150,160 @@
             <line number="10" hits="1" branch="false" />
             <line number="11" hits="1" branch="false" />
             <line number="12" hits="1" branch="false" />
-            <line number="13" hits="1" branch="false" />
-            <line number="17" hits="1" branch="false" />
-            <line number="18" hits="1" branch="false" />
-            <line number="19" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="unit_tests.MaxMatrixElTests" filename="D:\Studying\STP\2_lab\unit_tests\UnitTest1.cs" line-rate="0.846153846153846" branch-rate="1" complexity="3">
+          <methods>
+            <method name="MaxMatrixEl_ValidMatrix" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="59" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+                <line number="62" hits="1" branch="false" />
+                <line number="63" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="FindMaxElement_EmptyArray" signature="()" line-rate="0.75" branch-rate="1" complexity="1">
+              <lines>
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+                <line number="71" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MaxMatrixEl_NullMatrix" signature="()" line-rate="0.75" branch-rate="1" complexity="1">
+              <lines>
+                <line number="76" hits="1" branch="false" />
+                <line number="77" hits="2" branch="false" />
+                <line number="78" hits="1" branch="false" />
+                <line number="79" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="59" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="63" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="70" hits="1" branch="false" />
+            <line number="71" hits="0" branch="false" />
+            <line number="76" hits="1" branch="false" />
+            <line number="77" hits="2" branch="false" />
+            <line number="78" hits="1" branch="false" />
+            <line number="79" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="unit_tests.MaxMatrixTopDiameterElTests" filename="D:\Studying\STP\2_lab\unit_tests\UnitTest1.cs" line-rate="0.846153846153846" branch-rate="1" complexity="3">
+          <methods>
+            <method name="MaxMatrixTopDiameterEl_ValidMatrix" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="87" hits="1" branch="false" />
+                <line number="88" hits="1" branch="false" />
+                <line number="89" hits="1" branch="false" />
+                <line number="90" hits="1" branch="false" />
+                <line number="91" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MaxMatrixTopDiameterEl_EmptyMatrix" signature="()" line-rate="0.75" branch-rate="1" complexity="1">
+              <lines>
+                <line number="96" hits="1" branch="false" />
+                <line number="97" hits="1" branch="false" />
+                <line number="98" hits="1" branch="false" />
+                <line number="99" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MaxMatrixTopDiameterEl_NullMatrix" signature="()" line-rate="0.75" branch-rate="1" complexity="1">
+              <lines>
+                <line number="104" hits="1" branch="false" />
+                <line number="105" hits="1" branch="false" />
+                <line number="106" hits="1" branch="false" />
+                <line number="107" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="87" hits="1" branch="false" />
+            <line number="88" hits="1" branch="false" />
+            <line number="89" hits="1" branch="false" />
+            <line number="90" hits="1" branch="false" />
+            <line number="91" hits="1" branch="false" />
+            <line number="96" hits="1" branch="false" />
+            <line number="97" hits="1" branch="false" />
+            <line number="98" hits="1" branch="false" />
+            <line number="99" hits="0" branch="false" />
+            <line number="104" hits="1" branch="false" />
+            <line number="105" hits="1" branch="false" />
+            <line number="106" hits="1" branch="false" />
+            <line number="107" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="unit_tests.MinFromTwoTests" filename="D:\Studying\STP\2_lab\unit_tests\UnitTest1.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="MinFromTwo_FirstIsSmaller" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="23" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MinFromTwo_SecondIsSmaller" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MinFromTwo_BothAreEqual" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="37" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MinFromTwo_BothAreNegative" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MinFromTwo_OneIsNegative" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
             <line number="20" hits="1" branch="false" />
-            <line number="24" hits="1" branch="false" />
-            <line number="25" hits="1" branch="false" />
-            <line number="26" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="1" branch="false" />
             <line number="27" hits="1" branch="false" />
-            <line number="31" hits="1" branch="false" />
-            <line number="32" hits="1" branch="false" />
-            <line number="33" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
             <line number="34" hits="1" branch="false" />
-            <line number="38" hits="1" branch="false" />
-            <line number="39" hits="1" branch="false" />
-            <line number="40" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
             <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
           </lines>
         </class>
       </classes>

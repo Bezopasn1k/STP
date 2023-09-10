@@ -3,6 +3,16 @@ namespace unit_tests
     using STP_SecondLab;
 
     [TestClass]
+    public class MainTest
+    {
+        [TestMethod]
+        public void Main_Test()
+        {
+            Program.Main(null);
+        }
+    }
+
+    [TestClass]
     public class MinFromTwoTests
     {
         [TestMethod]
@@ -66,6 +76,34 @@ namespace unit_tests
         {
             double[,] matrix = null; ;
             double result = Program.MaxMatrixEl(matrix);
+        }
+    }
+
+    [TestClass]
+    public class MaxMatrixTopDiameterElTests
+    {
+        [TestMethod]
+        public void MaxMatrixTopDiameterEl_ValidMatrix()
+        {
+            double[,] matrix = { { 1.0, 2.0, 3.0 }, { 4.0, 5.0, 6.0 }, { 7.0, 8.0, 9.0 } };
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
+            Assert.AreEqual(7.0, result, 0.001); // ѕроверка нахождени€ максимального значени€
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void MaxMatrixTopDiameterEl_EmptyMatrix()
+        {
+            double[,] matrix = new double[0, 0];
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void MaxMatrixTopDiameterEl_NullMatrix()
+        {
+            double[,] matrix = null;
+            double result = Program.MaxMatrixTopDiameterEl(matrix);
         }
     }
 }
