@@ -7,7 +7,7 @@ namespace STP_ThirdLab
     {
         public static void Main(string[] args)
         {
-            /*double[] h = new double[3];
+            double[] h = new double[3];
             h = Order(7, 3, 5);
             for (int i = 0; i < 3; i++)
             {
@@ -33,7 +33,7 @@ namespace STP_ThirdLab
             }
             Console.WriteLine("");
 
-            Console.WriteLine(GCD(13, 576));
+            Console.WriteLine(GCD(-13, -576));
 
             Console.WriteLine(ConvertFromEven(436654));
 
@@ -48,7 +48,7 @@ namespace STP_ThirdLab
                 Console.WriteLine(" ");
             }
 
-            MaxMatrixTopDiameterEl(matrix);*/
+            MaxMatrixTopDiameterEl(matrix);
         }
 
         public static double[] Order(double x, double y, double z)
@@ -70,26 +70,19 @@ namespace STP_ThirdLab
 
             return order;
         }
-        static int Min(int x, int y)
-        {
-            return x < y ? x : y;
-        }
-
-        static int Max(int x, int y)
-        {
-            return x > y ? x : y;
-        }
 
         public static int GCD(int a, int b)
         {
+            a = Math.Abs(a);
+            b = Math.Abs(b);
             if (a == 0)
             {
                 return b;
             }
             else
             {
-                var min = Min(a, b);
-                var max = Max(a, b);
+                var min = Math.Min(a, b);
+                var max = Math.Max(a, b);
                 return GCD(max - min, min);
             }
         }
