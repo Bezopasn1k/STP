@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace STP_ThirdLab
 {
@@ -36,9 +32,9 @@ namespace STP_ThirdLab
             }
             Console.WriteLine("");
 
-            Console.WriteLine(GCD(13, 576));
+            Console.WriteLine(GCD(-13, -576));
 
-            Console.WriteLine(ConvertFromEven(436654));
+            Console.WriteLine(ConvertFromEven(-12345678));
 
             double[,] matrix = new double[5, 5];
             for (int i = 0; i < 5; i++)
@@ -51,12 +47,12 @@ namespace STP_ThirdLab
                 Console.WriteLine(" ");
             }
 
-            MaxMatrixTopDiameterEl(matrix);
+            Console.WriteLine(MaxMatrixTopDiameterEl(matrix));
         }
 
         public static double[] Order(double x, double y, double z)
         {
-           double[] order = new double[3];
+            double[] order = new double[3];
             if (x < y)
             {
                 (x, y) = (y, x);
@@ -73,55 +69,45 @@ namespace STP_ThirdLab
 
             return order;
         }
-        static int Min(int x, int y)
-        {
-            return x < y ? x : y;
-        }
-
-        static int Max(int x, int y)
-        {
-            return x > y ? x : y;
-        }
 
         public static int GCD(int a, int b)
         {
+            a = Math.Abs(a);
+            b = Math.Abs(b);
             if (a == 0)
             {
                 return b;
             }
             else
             {
-                var min = Min(a, b);
-                var max = Max(a, b);
+                var min = Math.Min(a, b);
+                var max = Math.Max(a, b);
                 return GCD(max - min, min);
             }
         }
 
         public static int ConvertFromEven(int x)
         {
-            List<int> numbers = new List<int> { };
+            x = Math.Abs(x);
+            int result = 0;
+            int grade = 1;
+            bool evenDigit = false;
+
             while (x > 0)
             {
-                numbers.Add((x % 10));
+                int digit = x % 10;
+                if (evenDigit)
+                {
+                    result += digit * grade;
+                    grade *= 10;
+                }
+                evenDigit = !evenDigit;
                 x = x / 10;
             }
 
-
-
-            int res = 0;
-            int grade = 1;
-            for (int i = numbers.Count - 1; i >= 0; i--)
-            {
-                if (numbers[i] % 2 == 0)
-                {
-                    res += numbers[i] * grade;
-                    grade *= 10;
-                }
-            }
-
-            Console.WriteLine(res);
-            return res;
+            return result;
         }
+
 
         public static double MaxMatrixTopDiameterEl(double[,] matrix)
         {
@@ -130,24 +116,22 @@ namespace STP_ThirdLab
                 throw new ArgumentException("Массив пустой или равен null.");
             }
 
-            double res = double.MinValue;
+            double res = 0;
             int rows = matrix.GetLength(0);
             int columns = matrix.GetLength(1);
-            int shift = 0;
 
             for (int i = 0; i < rows; i++)
             {
                 // Console.WriteLine("i: ");
                 for (int j = 0; j < columns; j++)
                 {
-                    if (matrix[i, j] % 2 == 1 && i < j)
+                    if (Math.Abs(matrix[i, j]) % 2 == 1 && i < j)
                     {
-                        // Console.Write(matrix[i, j] + " ");
+                        Console.Write(matrix[i, j] + " ");
                         res += matrix[i, j];
                     }
                 }
                 // Console.WriteLine("\n");
-                shift++;
             }
 
             return res;
