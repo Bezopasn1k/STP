@@ -1,0 +1,7 @@
+D:\Main\Git\STP\2_lab\STP_SecondLab\bin\Debug\STP_SecondLab.exe.config
+D:\Main\Git\STP\2_lab\STP_SecondLab\bin\Debug\STP_SecondLab.exe
+D:\Main\Git\STP\2_lab\STP_SecondLab\bin\Debug\STP_SecondLab.pdb
+D:\Main\Git\STP\2_lab\STP_SecondLab\obj\Debug\STP_SecondLab.csproj.AssemblyReference.cache
+D:\Main\Git\STP\2_lab\STP_SecondLab\obj\Debug\STP_SecondLab.csproj.CoreCompileInputs.cache
+D:\Main\Git\STP\2_lab\STP_SecondLab\obj\Debug\STP_SecondLab.exe
+D:\Main\Git\STP\2_lab\STP_SecondLab\obj\Debug\STP_SecondLab.pdb
