@@ -16,9 +16,9 @@ namespace ConsoleApplicationMatrix
         public MatrixClass(int i, int j)
         {
             if (i <= 0)
-                throw new MyException($"недопустимое значение строки ={ i }");
+                throw new MyException($"недопустимое значение строки ={i}");
             if (j <= 0)
-                throw new MyException($"недопустимое значение столбца= { j }");
+                throw new MyException($"недопустимое значение столбца= {j}");
             I = i;
             J = j;
             m = new int[i, j];
@@ -47,17 +47,17 @@ namespace ConsoleApplicationMatrix
             get
             {
                 if (i < 0 | i > I - 1)
-                    throw new MyException($"неверное значение i = { i }");
+                    throw new MyException($"неверное значение i = {i}");
                 if (j < 0 | j > J - 1)
-                    throw new MyException($"неверное значение j = { j }");
+                    throw new MyException($"неверное значение j = {j}");
                 return m[i, j];
             }
             set
             {
                 if (i < 0 | i > I - 1)
-                    throw new MyException($"неверное значение i = { i }");
+                    throw new MyException($"неверное значение i = {i}");
                 if (j < 0 | j > J - 1)
-                    throw new MyException($"неверное значение j = { 0 }");
+                    throw new MyException($"неверное значение j = {j}");
                 m[i, j] = value;
             }
         }
@@ -167,7 +167,8 @@ namespace ConsoleApplicationMatrix
                     if (j + 1 == J)
                     {
                         result += m[i, j].ToString();
-                    } else
+                    }
+                    else
                     {
                         result += m[i, j].ToString() + ',';
                     }
@@ -175,7 +176,8 @@ namespace ConsoleApplicationMatrix
                 if (i + 1 == I)
                 {
                     result += "}";
-                } else
+                }
+                else
                 {
                     result += "} ";
                 }
@@ -199,7 +201,7 @@ namespace ConsoleApplicationMatrix
                 }
             }
 
-            return min; 
+            return min;
         }
 
         public MatrixClass Transp()
