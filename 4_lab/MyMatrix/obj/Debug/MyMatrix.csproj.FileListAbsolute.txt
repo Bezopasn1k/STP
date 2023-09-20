@@ -5,3 +5,10 @@ D:\Main\Git\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.csproj.AssemblyReference.cache
 D:\Main\Git\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.csproj.CoreCompileInputs.cache
 D:\Main\Git\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.exe
 D:\Main\Git\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.pdb
+D:\Studying\STP\4_lab\MyMatrix\bin\Debug\MyMatrix.exe.config
+D:\Studying\STP\4_lab\MyMatrix\bin\Debug\MyMatrix.exe
+D:\Studying\STP\4_lab\MyMatrix\bin\Debug\MyMatrix.pdb
+D:\Studying\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.csproj.AssemblyReference.cache
+D:\Studying\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.csproj.CoreCompileInputs.cache
+D:\Studying\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.exe
+D:\Studying\STP\4_lab\MyMatrix\obj\Debug\MyMatrix.pdb
