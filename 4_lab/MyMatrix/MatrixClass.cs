@@ -125,7 +125,6 @@ namespace ConsoleApplicationMatrix
         }
         public static bool operator !=(MatrixClass a, MatrixClass b)
         {
-
             return !(a == b);
         }
         //Вывод значений компонентов на консоль.
