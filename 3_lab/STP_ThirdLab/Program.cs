@@ -37,17 +37,21 @@ namespace STP_ThirdLab
             Console.WriteLine(ConvertFromEven(-12345678));
 
             double[,] matrix = new double[5, 5];
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 0; j < 5; j++)
+                for (int j = 0; j < 3; j++)
                 {
-                    matrix[i, j] = i + j;
+                    matrix[i, j] = -(i + j + 1);
                     Console.Write(matrix[i, j] + " ");
                 }
                 Console.WriteLine(" ");
             }
 
+<<<<<<< HEAD
             Console.WriteLine(MaxMatrixTopDiameterEl(matrix));
+=======
+            Console.WriteLine( MaxMatrixTopDiameterEl(matrix));
+>>>>>>> 3ea45e0ef45eae0efdfb1dff97bb10e8ad0e5a96
         }
 
         public static double[] Order(double x, double y, double z)
