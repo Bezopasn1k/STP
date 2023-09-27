@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MyFraction;
-
-namespace MyFraction
+﻿namespace MyFraction
 {
     internal class Program
     {
@@ -21,7 +14,7 @@ namespace MyFraction
             n.PrintFraction();
             n = n / c;
             n.PrintFraction();
-            n = n.squaring();
+            n = n.Squaring();
             n.PrintFraction();
         }
     }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyFraction
 {
@@ -32,9 +28,9 @@ namespace MyFraction
         {
             string[] words = fraction.Split('/');
             if (words[1][0] == '0' && words[1].Length == 1)
-                {
-                    throw new MyException($"Знаменатель равен 0");
-                }
+            {
+                throw new MyException($"Знаменатель равен 0");
+            }
             else
             {
                 bool flag = false;
@@ -102,22 +98,21 @@ namespace MyFraction
 
         public MyFraction Squaring()
         {
-            MyFraction c = this * this;
-            c.GCD(c.m_Numerator, c.m_Denominator);
-            return c;
+            int newNumerator = m_Numerator * m_Numerator;
+            int newDenominator = m_Denominator * m_Denominator;
+            int gcd = GCD(newNumerator, newDenominator);
+
+            return new MyFraction(newNumerator / gcd, newDenominator / gcd);
         }
 
         public MyFraction Reverse()
         {
-            MyFraction c = new MyFraction(m_Denominator, m_Numerator);
-
-            c.GCD(c.m_Numerator, c.m_Denominator);
-            return c;
+            return new MyFraction(m_Denominator, m_Numerator);
         }
 
         public static bool operator !=(MyFraction a, MyFraction b)
         {
-            a.GCD(a.m_Numerator, a.m_Denominator); 
+            a.GCD(a.m_Numerator, a.m_Denominator);
             b.GCD(b.m_Numerator, b.m_Denominator);
             return (a.m_Numerator != b.m_Numerator || a.m_Denominator != b.m_Denominator) ? true : false;
         }
@@ -193,12 +188,26 @@ namespace MyFraction
 
         public string GetFracStr()
         {
-            return Convert.ToString(m_Numerator + '/' + m_Denominator);
+            return $"{m_Numerator}/{m_Denominator}";
         }
 
         public void PrintFraction()
         {
-            Console.WriteLine("Fraction: "+ m_Numerator + '/' + m_Denominator);
+            Console.WriteLine("Fraction: " + m_Numerator + '/' + m_Denominator);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+
+            MyFraction otherFraction = (MyFraction)obj;
+            return m_Numerator == otherFraction.m_Numerator && m_Denominator == otherFraction.m_Denominator;
+        }
+
+        public override int GetHashCode()
+        {
+            return Tuple.Create(m_Numerator, m_Denominator).GetHashCode();
         }
     }
 }
