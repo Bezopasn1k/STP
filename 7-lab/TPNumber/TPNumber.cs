@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TPNumber;
 
 namespace TPNumber
 {
@@ -18,12 +13,13 @@ namespace TPNumber
             public TPNumberException(string s) : base(s) { }
         }
 
-        public TPNumber(double number, int base_, int precision) {
+        public TPNumber(double number, int base_, int precision)
+        {
             if (base_ < 2 || base_ > 16)
             {
                 throw new TPNumberException("Основание СС не принадлежит интервалу [2;16].");
             }
-            if (precision< 0)
+            if (precision < 0)
             {
                 throw new TPNumberException("Точность не может быть меньше 0.");
             }
@@ -32,7 +28,8 @@ namespace TPNumber
             c = precision;
         }
 
-        public TPNumber(string number, int base_, string precision) {
+        public TPNumber(string number, string base_, string precision)
+        {
             double value = Convert.ToDouble(number);
             int baseValue = Convert.ToInt32(base_);
             int precisionValue = Convert.ToInt32(precision);
@@ -49,18 +46,23 @@ namespace TPNumber
             c = precisionValue;
         }
 
-        public TPNumber(TPNumber other) {
+
+        public TPNumber(TPNumber other)
+        {
             n = other.n;
             b = other.b;
             c = other.c;
         }
 
-        public TPNumber Copy() {
+        public TPNumber Copy()
+        {
             return new TPNumber(n, b, c);
         }
 
-        public static TPNumber operator +(TPNumber other_1, TPNumber other_2) {
-            if (other_1.b != other_2.b) {
+        public static TPNumber operator +(TPNumber other_1, TPNumber other_2)
+        {
+            if (other_1.b != other_2.b)
+            {
                 throw new TPNumberException("Основания чисел не совпадают.");
             }
             if (other_1.c != other_2.c)
@@ -71,8 +73,10 @@ namespace TPNumber
             return new TPNumber(sum, other_1.b, other_1.c);
         }
 
-        public static TPNumber operator *(TPNumber other_1, TPNumber other_2)  {
-            if (other_1.b != other_2.b) {
+        public static TPNumber operator *(TPNumber other_1, TPNumber other_2)
+        {
+            if (other_1.b != other_2.b)
+            {
                 throw new TPNumberException("Основания чисел не совпадают.");
             }
             if (other_1.c != other_2.c)
@@ -80,11 +84,13 @@ namespace TPNumber
                 throw new TPNumberException("Точности чисел не совпадают.");
             }
             double mul = other_1.n * other_2.n;
-            return new TPNumber (mul, other_1.b, other_1.c);
+            return new TPNumber(mul, other_1.b, other_1.c);
         }
 
-        public static TPNumber operator -(TPNumber other_1, TPNumber other_2) {
-            if (other_1.b != other_2.b) {
+        public static TPNumber operator -(TPNumber other_1, TPNumber other_2)
+        {
+            if (other_1.b != other_2.b)
+            {
                 throw new TPNumberException("Основания чисел не совпадают.");
             }
             if (other_1.c != other_2.c)
@@ -95,15 +101,17 @@ namespace TPNumber
             return new TPNumber(diff, other_1.b, other_1.c);
         }
 
-        public static TPNumber operator /(TPNumber other_1, TPNumber other_2) {
-            if (other_1.b != other_2.b) {
+        public static TPNumber operator /(TPNumber other_1, TPNumber other_2)
+        {
+            if (other_1.b != other_2.b)
+            {
                 throw new TPNumberException("Основания чисел не совпадают.");
             }
             if (other_1.c != other_2.c)
             {
                 throw new TPNumberException("Точности чисел не совпадают.");
             }
-            if (other_1.n == 0)
+            if (other_2.n == 0)
             {
                 throw new TPNumberException("Деление на ноль.");
             }
@@ -111,47 +119,57 @@ namespace TPNumber
             return new TPNumber(quotient, other_1.b, other_1.c);
         }
 
-        public TPNumber Inverse() {
-            if (n == 0) {
+        public TPNumber Inverse()
+        {
+            if (n == 0)
+            {
                 throw new TPNumberException("Деление на ноль");
             }
             double inv = 1.0 / n;
             return new TPNumber(inv, b, c);
         }
 
-        public TPNumber Square() {
+        public TPNumber Square()
+        {
             double square = n * n;
             return new TPNumber(square, b, c);
         }
 
-        public double GetNumber() {
+        public double GetNumber()
+        {
             return n;
         }
 
-        public string GetNString() {
+        public string GetNString()
+        {
             string nString = Convert.ToString(n);
             return nString;
         }
 
-        public int GetBNumber() {
+        public int GetBNumber()
+        {
             return b;
         }
 
-        public string GetBString() {
+        public string GetBString()
+        {
             string bString = Convert.ToString(b);
             return bString;
         }
 
-        public int GetCNumber() {
+        public int GetCNumber()
+        {
             return c;
         }
 
-        public string GetCString() {
+        public string GetCString()
+        {
             string cString = Convert.ToString(c);
             return cString;
         }
 
-        public void SetBNumber(int newB) {
+        public void SetBNumber(int newB)
+        {
             if (newB >= 2 && newB <= 16)
             {
                 b = newB;
@@ -162,7 +180,8 @@ namespace TPNumber
             }
         }
 
-        public void SetBString(string newB) {
+        public void SetBString(string newB)
+        {
             int newBaseValue = Convert.ToInt32(newB);
             if (newBaseValue >= 2 && newBaseValue <= 16)
             {
@@ -174,7 +193,8 @@ namespace TPNumber
             }
         }
 
-        public void SetCNumber(int newC) {
+        public void SetCNumber(int newC)
+        {
             if (newC >= 0)
             {
                 c = newC;
@@ -185,7 +205,8 @@ namespace TPNumber
             }
         }
 
-        public void SetCString(string newC) {
+        public void SetCString(string newC)
+        {
             int newPrecisionValue = Convert.ToInt32(newC);
             if (newPrecisionValue >= 0)
             {
