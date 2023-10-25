@@ -1,10 +1,5 @@
-﻿using ComplexNumberEditor;
-using MyComplexNumber;
+﻿using MyComplexNumber;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComplexNumberEditor
 {
@@ -42,7 +37,7 @@ namespace ComplexNumberEditor
                             }
                             break;
                         case 2:
-                            editor.AddSeporator(); // Добавить точку
+                            editor.AddSeparator(); // Добавить точку
                             break;
                         case 3:
                             editor.AddZero(); // Добавить ноль

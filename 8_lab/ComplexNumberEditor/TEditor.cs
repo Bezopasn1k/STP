@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MyComplexNumber;
+﻿using MyComplexNumber;
+using System;
 
 namespace ComplexNumberEditor
 {
     public class TEditor
     {
-        public TEditor(ComplexNumber number) 
+        public TEditor(ComplexNumber number)
         {
             m_StrNumber = number.ToString();
             m_StrNumberRl = number.GetReStr();
@@ -22,15 +18,7 @@ namespace ComplexNumberEditor
         private bool imSign = true;
         public bool IsZero()
         {
-            string[] words;
-            if (m_StrNumber.Contains('+'))
-            {
-                words = m_StrNumber.Split('+');
-            } else
-            {
-                words = m_StrNumber.Split('-');
-            }
-            return (words[0] == "0" && words[1] == "0") ? true : false;
+            return (m_StrNumberRl == "0" && m_StrNumberIm == "0") ? true : false;
         }
 
         public void AddSign()
@@ -45,7 +33,7 @@ namespace ComplexNumberEditor
                 {
                     m_StrNumberRl = m_StrNumberRl.Remove(0, 1);
                 }
-            } 
+            }
             else
             {
                 imSign = !imSign;
@@ -94,14 +82,15 @@ namespace ComplexNumberEditor
                 {
                     num++;
                 }
-                if (m_StrNumberRl.Length - 1 > 0 + num) {
+                if (m_StrNumberRl.Length - 1 > 0 + num)
+                {
                     m_StrNumberRl = m_StrNumberRl.Remove(m_StrNumberRl.Length - 1);
                     m_StrNumber = m_StrNumberRl + m_StrNumberIm;
                 }
             }
             else
             {
-                if (m_StrNumberIm.Length - 1 > 0 )
+                if (m_StrNumberIm.Length - 1 > 0)
                 {
                     m_StrNumberIm = m_StrNumberIm.Remove(m_StrNumberIm.Length - 1);
                     m_StrNumber = m_StrNumberRl + m_StrNumberIm;
@@ -130,9 +119,9 @@ namespace ComplexNumberEditor
         {
             editingRealPart = !editingRealPart;
         }
-             
 
-        public void AddSeporator()
+
+        public void AddSeparator()
         {
             if (editingRealPart)
             {
@@ -149,7 +138,8 @@ namespace ComplexNumberEditor
             if (imSign == false)
             {
                 return $"{m_StrNumberRl} - i*{m_StrNumberIm}";
-            } else
+            }
+            else
             {
                 return $"{m_StrNumberRl} + i*{m_StrNumberIm}";
             }
@@ -158,6 +148,16 @@ namespace ComplexNumberEditor
         public bool IsEditingRealPart()
         {
             return editingRealPart;
+        }
+
+        public string GetRl()
+        {
+            return m_StrNumberRl;
+        }
+
+        public string GetIm()
+        {
+            return m_StrNumberIm;
         }
     }
 }
