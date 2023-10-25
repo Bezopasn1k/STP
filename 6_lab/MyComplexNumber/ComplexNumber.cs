@@ -202,5 +202,19 @@ namespace MyComplexNumber
         {
             return Tuple.Create(m_Real, m_Imaginary).GetHashCode();
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+
+            ComplexNumber otherFraction = (ComplexNumber)obj;
+            return m_Real == otherFraction.m_Real && m_Imaginary == otherFraction.m_Imaginary;
+        }
+
+        public override int GetHashCode()
+        {
+            return Tuple.Create(m_Real, m_Imaginary).GetHashCode();
+        }
     }
 }
