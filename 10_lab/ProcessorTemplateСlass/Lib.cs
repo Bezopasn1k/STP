@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProcessorTemplateСlass
 {
@@ -50,14 +46,7 @@ namespace ProcessorTemplateСlass
                     Lop_Res = Multiply(Lop_Res, Rop);
                     break;
                 case TOprtn.Dvd:
-                    if (IsDivisionValid(Rop))
-                    {
-                        Lop_Res = Divide(Lop_Res, Rop);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Делить на ноль нельзя");
-                    }
+                    Lop_Res = Divide(Lop_Res, Rop);
                     break;
             }
 
@@ -74,7 +63,7 @@ namespace ProcessorTemplateСlass
                 }
                 else
                 {
-                    Console.WriteLine("Делить на ноль нельзя");
+                    throw new DivideByZeroException("Делить на ноль нельзя");
                 }
             }
             else if (Func == TFunc.Sqr)
@@ -164,8 +153,7 @@ namespace ProcessorTemplateСlass
 
             if (y == 0)
             {
-                Console.WriteLine("Делить на ноль нельзя");
-                return default(T);
+                throw new DivideByZeroException("Делить на ноль нельзя");
             }
 
             return x / y;
