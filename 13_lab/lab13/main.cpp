@@ -1,9 +1,7 @@
 #include <iostream>
 #include <cmath>
-#include <windows.h>
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
     int n2_array[] = {300, 400, 512};
     int optimal_n2 = 8;
 

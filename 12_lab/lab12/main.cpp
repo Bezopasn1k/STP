@@ -1,17 +1,14 @@
 #include <iostream>
-#include <windows.h>
 
-#include "minElementWithIndex.h"
-#include "bubbleSort.h"
-#include "binarySearch.h"
-#include "findMinElement.h"
-#include "reverseArray.h"
-#include "cyclicShiftLeft.h"
-#include "replaceAll.h"
+#include "minElementWithIndex/minElementWithIndex.h"
+#include "bubbleSort/bubbleSort.h"
+#include "binarySearch/binarySearch.h"
+#include "findMinElement/findMinElement.h"
+#include "reverseArray/reverseArray.h"
+#include "cyclicShiftLeft/cyclicShiftLeft.h"
+#include "replaceAll/replaceAll.h"
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
-
     one();
     std::cout << std::endl;
     two();
