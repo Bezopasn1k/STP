@@ -8,8 +8,6 @@ namespace Converter
 {
     public class ADT_Convert_p_10
     {
-        //Преобразовать из с.сч. с основанием р 
-        //в с.сч. с основанием 10
         public static double Dval(string p_num, int p)
         {
             if (p < 2 || p > 16)
@@ -51,7 +49,6 @@ namespace Converter
             return buf;
         }
 
-        //Преобразовать цифру в число
         public static double Char_to_num(char ch)
         {
             string allNums = "0123456789ABCDEF";
@@ -61,7 +58,6 @@ namespace Converter
 
         }
 
-        //Преобразовать строку в число
         public static double Convert(string p_num, int p, double weight)
         {
             return 0d;

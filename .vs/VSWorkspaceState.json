@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\3_lab",
-    "\\3_lab\\STP_ThirdLab"
+    "\\STP PART 2",
+    "\\STP PART 2\\Converter",
+    "\\STP PART 2\\Converter\\Converter"
   ],
-  "SelectedNode": "\\3_lab\\STP_ThirdLab\\Program.cs",
+  "SelectedNode": "\\STP PART 2\\Converter\\Converter\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

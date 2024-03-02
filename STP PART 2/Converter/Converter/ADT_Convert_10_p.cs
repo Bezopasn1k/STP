@@ -8,8 +8,6 @@ namespace Converter
 {
     public class ADT_Convert_10_p
     {
-        //Преобразовать десятичное 
-        //действительное число в с.сч. с осн. р.
         public static string Do(double n, int p, int c)
         {
             if (p < 2 || p > 16)
@@ -29,7 +27,6 @@ namespace Converter
             return leftSideString + (rightSideString == String.Empty ? "" : ".") + rightSideString;
         }
 
-        //Преобразовать целое в символ.
         public static char Int_to_char(int d)
         {
             if (d > 15 || d < 0)
@@ -40,7 +37,6 @@ namespace Converter
             return allSymbols.ElementAt(d);
         }
 
-        //Преобразовать десятичное целое в с.сч. с основанием р.
         public static string Int_to_p(long n, int p)
         {
             if (p < 2 || p > 16)
@@ -72,7 +68,6 @@ namespace Converter
             return new string(chs);
         }
 
-        //Преобразовать десятичную дробь в с.сч. с основанием р.
         public static string Flt_to_p(double n, int p, int c)
         {
             if (p < 2 || p > 16)

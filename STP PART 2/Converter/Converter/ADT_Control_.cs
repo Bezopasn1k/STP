@@ -1,38 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Converter
 {
     class ADT_Control_
     {
-        //Основание системы сч. исходного числа.
         int pin = 10;
-        //Основание системы сч. результата.
         int pout = 16;
-        //Число разрядов в дробной части результата.
         const int accuracy = 10;
         public History history = new History();
         public enum State { Edit, Converted }
         private State state;
-        //Свойство для чтения и записи состояние Конвертера.
         internal State St { get => state; set => state = value; }
-        //Свойство для чтения и записи основание системы сч. р1.
         public int Pin { get => pin; set => pin = value; }
-        //Свойство для чтения и записи основание системы сч. р2.
         public int Pout { get => pout; set => pout = value; }
-        //Конструктор.
         public ADT_Control_()
         {
             St = State.Edit;
             Pin = pin;
             Pout = pout;
         }
-        //объект редактор
         public Editor editor = new Editor();
-        //Выполнить команду конвертера.
         public string doCmnd(int j)
         {
             if (j == 19)
@@ -50,7 +38,6 @@ namespace Converter
             }
         }
 
-        //Точность представления результата.
         private int Acc()
         {
             return (int)Math.Round(editor.acc() * Math.Log(Pin) / Math.Log(Pout) + 0.5);
