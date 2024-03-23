@@ -126,8 +126,7 @@ namespace rgz
 
         private void AboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Калькулятор простых дробей\n\nВариант 13\nТип числа - простая дробь\nПрецеденты - 1-6\nОперанды могут браться из:\n  памяти - да\n  буфера обмена - да\nИстория - нет\nНастройки - нет\n\nРазработчик: Петровский В.Е., ИП-014", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            MessageBox.Show("Калькулятор простых дробей\n\nВариант 13\nТип числа - простая дробь\nПрецеденты - 1-6\nОперанды могут браться из:\n  памяти - да\n  буфера обмена - да\nИстория - нет\nНастройки - нет\n\nРазработчики: Петровский В.Е., Альхимович М.В., Заескова В.В. ИП-014", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Button_Number_Edit(object sender, EventArgs e)

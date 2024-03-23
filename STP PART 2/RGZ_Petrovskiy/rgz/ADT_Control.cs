@@ -90,7 +90,6 @@
             T tmp = new T();
             tmp.SetString(toReturn);
             proc.Right_operand = tmp;
-          //  history.AddRecord(toReturn, command.ToString());
 
             return toReturn;
         }
@@ -153,7 +152,6 @@
                 Reset();
                 return "ERROR";
             }
-          //  history.AddRecord(toReturn, oper.ToString());
 
             return toReturn;
         }
@@ -177,7 +175,6 @@
                 Reset();
                 return "ERROR";
             }
-          //  history.AddRecord(toReturn, func.ToString());
 
             return toReturn;
         }
